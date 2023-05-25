@@ -10,7 +10,7 @@ const url = 'http://localhost:3000';
 
 describe('Selenium', ()=> {
     it('30, 35-re eredmény = 12252.211349000194', async()=> {
-        let driver = new Builder().forBrowser('chrome').build();
+    let driver = new Builder().forBrowser('chrome').build();
     driver.get(url); // megnyitja / meghívja az ablakot...
     driver.findElement(By.id('radius')).sendKeys('30');
     driver.findElement(By.id('height')).sendKeys('35');
